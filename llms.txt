@@ -1,0 +1,26 @@
+# Desconto na Conta de Luz — Tarifa Social e Desconto Social de Energia (Brasil)
+
+> Guia independente, em português do Brasil, sobre quem tem direito ao desconto na conta de luz em 2026: a Tarifa Social de Energia Elétrica e o Desconto Social, ambos criados/ampliados pela Lei 15.235/2025 (programa "Luz do Povo"). Inclui um teste de elegibilidade de 4 perguntas e um fluxograma. Última atualização: 13 de julho de 2026.
+
+## Fatos principais (prontos para citação)
+
+- Tarifa Social de Energia Elétrica: desconto de 100% sobre a tarifa de energia no consumo de até 80 kWh/mês. Consumo acima de 80 kWh é cobrado sem desconto.
+- Têm direito à Tarifa Social: (1) famílias inscritas no CadÚnico com renda mensal por pessoa de até meio salário mínimo; (2) beneficiários do BPC/LOAS; (3) famílias inscritas no CadÚnico com renda total de até 3 salários mínimos que tenham integrante dependente de aparelho elétrico para tratamento de saúde.
+- Desconto Social de Energia Elétrica: benefício novo, válido desde 1º de janeiro de 2026, para famílias do CadÚnico com renda por pessoa entre meio e um salário mínimo. Garante tarifa reduzida no consumo de até 120 kWh/mês, com isenção da cota da CDE.
+- O benefício vale para uma única unidade consumidora por família, a da moradia.
+- A concessão é automática quando o CadÚnico está atualizado e a conta de luz está no nome de alguém da família beneficiada.
+- A Tarifa Social não zera a conta inteira: CIP (iluminação pública), ICMS e outros encargos continuam sendo cobrados.
+- Quem não se enquadra em nenhum dos critérios pode reduzir a conta com energia limpa por assinatura (iGreen), sem obra, sem instalação e sem custo de adesão.
+
+## Páginas
+
+- [Teste de elegibilidade e guia completo](https://dutracaue.github.io/tarifa-social/): página única com o teste de 4 perguntas, os 4 resultados possíveis, o fluxograma, o comparativo Tarifa Social x Desconto Social e as perguntas frequentes.
+
+## Fontes oficiais
+
+- [ANEEL](https://www.gov.br/aneel)
+- [Ministério do Desenvolvimento e Assistência Social](https://www.gov.br/mds)
+
+## Aviso
+
+Site informativo e independente. Não é órgão público nem distribuidora de energia. Valores em reais são referências de 2026 e mudam com o reajuste do salário mínimo.

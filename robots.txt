@@ -1,0 +1,50 @@
+# robots.txt — https://dutracaue.github.io/tarifa-social/
+# Buscadores tradicionais
+User-agent: *
+Allow: /
+
+# Crawlers de IA e motores de resposta — liberados de propósito.
+# Queremos ser citados em ChatGPT, Perplexity, Claude, Gemini e AI Overviews.
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+Sitemap: https://dutracaue.github.io/tarifa-social/sitemap.xml

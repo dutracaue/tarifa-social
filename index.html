@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Tarifa Social de Energia 2026: veja se você tem direito ao desconto na conta de luz</title>
+<meta name="description" content="Teste grátis em 1 minuto: descubra se sua família tem direito à Tarifa Social (100% de desconto até 80 kWh) ou ao Desconto Social (até 120 kWh). E veja como pagar menos na energia mesmo sem direito.">
+<link rel="canonical" href="https://dutracaue.github.io/tarifa-social/">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta name="author" content="Caue Dutra">
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Desconto na Conta de Luz">
+<meta property="og:title" content="Tarifa Social de Energia 2026: veja se você tem direito ao desconto">
+<meta property="og:description" content="Responda 4 perguntas e descubra em 1 minuto se sua conta de luz pode ficar até 100% mais barata.">
+<meta property="og:url" content="https://dutracaue.github.io/tarifa-social/">
+<meta property="og:image" content="https://dutracaue.github.io/tarifa-social/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tarifa Social de Energia 2026: você tem direito?">
+<meta name="twitter:description" content="Teste grátis de 1 minuto para saber se sua conta de luz pode ficar até 100% mais barata.">
+<meta name="twitter:image" content="https://dutracaue.github.io/tarifa-social/og-image.png">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800;900&family=IBM+Plex+Mono:wght@400;600&family=Public+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --mata:#04291B;        /* verde mata, cor de texto e topo */
+  --mata-2:#0A3D29;
+  --folha:#0B8A4B;       /* verde principal */
+  --folha-forte:#046B39;
+  --broto:#C6F24E;       /* verde-limão: acento da marca */
+  --musgo:#E6F2E9;       /* verde bem claro, fundos */
+  --orvalho:#F4F9F3;     /* papel */
+  --cinza:#5E6F65;
+  --linha:#D2E0D5;
+  --branco:#fff;
+  --r:14px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--orvalho);color:var(--mata);font:400 17px/1.62 'Public Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:820px;margin:0 auto;padding:0 18px}
+a{color:var(--folha-forte)}
+
+/* ---- topo ---- */
+header{background:var(--mata);color:#fff;padding:26px 0 40px;position:relative;overflow:hidden}
+header::after{content:"";position:absolute;inset:auto 0 0 0;height:5px;background:linear-gradient(90deg,var(--broto),var(--folha))}
+.tag{font:600 12px/1 'IBM Plex Mono',monospace;letter-spacing:.16em;text-transform:uppercase;color:var(--broto);display:flex;gap:9px;align-items:center}
+.tag b{width:8px;height:8px;border-radius:50%;background:var(--broto);display:block}
+h1{font:900 clamp(31px,7vw,48px)/1.04 'Archivo',sans-serif;letter-spacing:-.025em;margin:16px 0 14px;max-width:16ch}
+h1 em{font-style:normal;color:var(--broto)}
+.lead{color:#C4DBCE;max-width:54ch;font-size:18px}
+.cta-topo{display:inline-block;margin-top:22px;background:var(--broto);color:var(--mata);font-weight:700;padding:15px 26px;border-radius:999px;text-decoration:none}
+.cta-topo:hover{background:#d5ff6b}
+.atualizado{margin-top:18px;font:400 13px 'IBM Plex Mono',monospace;color:#7fa08c}
+
+/* ---- resposta direta (bloco de extração p/ IA) ---- */
+.resumo{background:var(--branco);border:1px solid var(--linha);border-left:5px solid var(--folha);border-radius:var(--r);padding:22px;margin:-26px 0 0;position:relative;z-index:2;box-shadow:0 16px 40px -30px rgba(4,41,27,.8)}
+.resumo h2{font:800 15px/1 'IBM Plex Mono',monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--folha-forte);margin-bottom:10px}
+.resumo p{margin-bottom:10px}
+.resumo ul{margin:0 0 4px 20px}
+.resumo li{margin-bottom:6px}
+
+section{padding:46px 0}
+h2{font:800 clamp(23px,4.8vw,31px)/1.15 'Archivo',sans-serif;letter-spacing:-.015em;margin-bottom:8px}
+h3{font:700 20px/1.25 'Archivo',sans-serif}
+.sub{color:var(--cinza);margin-bottom:24px;max-width:60ch}
+
+/* ---- quiz ---- */
+.quiz{background:var(--branco);border:1px solid var(--linha);border-radius:var(--r);padding:26px 22px;box-shadow:0 14px 34px -28px rgba(4,41,27,.7)}
+.barra{height:6px;background:var(--musgo);border-radius:999px;overflow:hidden;margin-bottom:20px}
+.barra i{display:block;height:100%;width:25%;background:var(--folha);transition:width .3s}
+.passo{font:600 12px 'IBM Plex Mono',monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--cinza)}
+.pergunta{font:800 22px/1.25 'Archivo',sans-serif;margin:8px 0 6px}
+.ajuda{color:var(--cinza);font-size:15px;margin-bottom:18px}
+.opcoes{display:grid;gap:10px}
+.op{width:100%;text-align:left;background:var(--branco);border:2px solid var(--linha);border-radius:12px;padding:15px 16px;font:600 17px 'Public Sans',sans-serif;color:var(--mata);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;transition:.15s}
+.op:hover,.op:focus-visible{border-color:var(--folha);background:var(--orvalho);outline:none;transform:translateY(-1px)}
+.op small{display:block;font-weight:400;font-size:13px;color:var(--cinza);margin-top:2px}
+.op i{font-style:normal;color:var(--folha);font-family:'IBM Plex Mono',monospace}
+.voltar{margin-top:16px;background:none;border:0;color:var(--cinza);font:600 14px 'Public Sans';cursor:pointer;text-decoration:underline}
+.step[hidden]{display:none}
+
+/* ---- resultados (sempre no HTML) ---- */
+.resultados{display:grid;gap:14px;margin-top:6px}
+.res{background:var(--branco);border:1px solid var(--linha);border-radius:var(--r);padding:22px;scroll-margin-top:20px}
+.res[data-ativo="1"]{border:2px solid var(--folha);box-shadow:0 0 0 5px rgba(11,138,75,.12)}
+.res[data-apagado="1"]{opacity:.5}
+.selo{display:inline-flex;align-items:center;gap:8px;font:600 11px 'IBM Plex Mono',monospace;letter-spacing:.12em;text-transform:uppercase;padding:6px 11px;border-radius:999px;background:var(--musgo);color:var(--folha-forte)}
+.selo b{width:8px;height:8px;border-radius:50%;background:var(--folha);display:block}
+.res.neutro .selo{background:#EDF0EC;color:var(--cinza)}
+.res.neutro .selo b{background:var(--cinza)}
+.res h3{margin:12px 0 8px}
+.res p{color:var(--cinza)}
+.res p strong{color:var(--mata)}
+.res ol{margin:14px 0 0 20px;color:var(--cinza)}
+.res ol li{margin-bottom:7px}
+.res ol strong{color:var(--mata)}
+.seu-resultado{display:none;font:700 13px 'Public Sans';color:var(--folha-forte);background:var(--broto);color:var(--mata);padding:4px 10px;border-radius:6px;margin-left:8px}
+.res[data-ativo="1"] .seu-resultado{display:inline-block}
+
+/* ---- bloco iGreen ---- */
+.igreen{margin-top:20px;border-top:2px dashed var(--linha);padding-top:20px}
+.igreen h4{font:800 19px 'Archivo',sans-serif;margin-bottom:8px}
+.cta{display:block;text-align:center;text-decoration:none;font-weight:700;padding:17px 20px;border-radius:12px;margin-top:12px;font-size:17px}
+.cta-1{background:var(--folha);color:#fff}
+.cta-1:hover{background:var(--folha-forte)}
+.cta-2{background:var(--branco);color:var(--mata);border:2px solid var(--folha)}
+.cta-2:hover{background:var(--musgo)}
+
+/* ---- tabela + cards ---- */
+.tab{width:100%;border-collapse:collapse;background:var(--branco);border:1px solid var(--linha);border-radius:var(--r);overflow:hidden;font-size:16px}
+.tab th{background:var(--mata);color:#fff;text-align:left;padding:13px 14px;font:700 14px 'Public Sans'}
+.tab td{padding:13px 14px;border-top:1px solid var(--linha);vertical-align:top}
+.tab td:first-child{font-weight:700}
+.mono{font:600 15px 'IBM Plex Mono',monospace}
+
+details{background:var(--branco);border:1px solid var(--linha);border-radius:12px;padding:16px 18px;margin-bottom:10px}
+summary{font:700 17px 'Public Sans';cursor:pointer}
+summary::marker{color:var(--folha)}
+details p{color:var(--cinza);margin-top:10px;font-size:16px}
+
+.fluxo{background:var(--branco);border:1px solid var(--linha);border-radius:var(--r);padding:16px}
+.fluxo svg{width:100%;height:auto;display:block}
+
+footer{background:var(--mata);color:#9CBBA9;padding:32px 0;font-size:14px;margin-top:24px}
+footer a{color:var(--broto)}
+footer p{margin-bottom:8px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <p class="tag"><b></b>Tarifa Social · Desconto Social · Lei 15.235/2025</p>
+    <h1>Sua conta de luz pode ficar <em>até 100% mais barata</em>.</h1>
+    <p class="lead">Responda 4 perguntas e descubra agora se sua família tem direito ao desconto do Governo Federal na energia elétrica. É grátis, anônimo e leva 1 minuto.</p>
+    <a class="cta-topo" href="#teste">Fazer o teste grátis →</a>
+    <p class="atualizado">Atualizado em <time datetime="2026-07-13">13 de julho de 2026</time></p>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="resumo">
+    <h2>Resposta rápida</h2>
+    <p>Tem direito ao desconto na conta de luz em 2026 quem se encaixa em pelo menos um destes casos:</p>
+    <ul>
+      <li><strong>Tarifa Social (100% de desconto na tarifa até 80 kWh/mês):</strong> família no CadÚnico com renda de até meio salário mínimo por pessoa; quem recebe BPC/LOAS; ou família no CadÚnico com renda total de até 3 salários mínimos que tenha alguém dependente de aparelho elétrico para tratamento de saúde.</li>
+      <li><strong>Desconto Social (tarifa reduzida até 120 kWh/mês, desde 1º de janeiro de 2026):</strong> família no CadÚnico com renda por pessoa entre meio e um salário mínimo.</li>
+      <li><strong>Não se encaixa em nenhum caso?</strong> Ainda dá para reduzir a conta com energia por assinatura, sem obra e sem custo de adesão.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ================= QUIZ ================= -->
+<section id="teste">
+  <div class="wrap">
+    <h2>Teste: você tem direito ao desconto?</h2>
+    <p class="sub">Não pedimos CPF, nome nem e-mail. Responda e veja o resultado na hora.</p>
+
+    <div class="quiz">
+      <div class="barra"><i id="progresso"></i></div>
+
+      <div class="step" id="q-bpc">
+        <p class="passo">Pergunta 1 de 4</p>
+        <h3 class="pergunta">Alguém que mora com você recebe o BPC (LOAS)?</h3>
+        <p class="ajuda">É o benefício de um salário mínimo pago pelo INSS a idosos com 65 anos ou mais e a pessoas com deficiência de baixa renda.</p>
+        <div class="opcoes">
+          <button class="op" data-vai="r-tarifa"><span>Sim, alguém recebe BPC</span><i>→</i></button>
+          <button class="op" data-vai="q-cad"><span>Não</span><i>→</i></button>
+          <button class="op" data-vai="q-cad"><span>Não sei o que é isso<small>Então provavelmente ninguém recebe.</small></span><i>→</i></button>
+        </div>
+      </div>
+
+      <div class="step" id="q-cad" hidden>
+        <p class="passo">Pergunta 2 de 4</p>
+        <h3 class="pergunta">Sua família está inscrita no CadÚnico?</h3>
+        <p class="ajuda">É o Cadastro Único do Governo Federal, feito no CRAS da sua cidade. Quem recebe Bolsa Família está no CadÚnico.</p>
+        <div class="opcoes">
+          <button class="op" data-vai="q-renda"><span>Sim, estamos inscritos</span><i>→</i></button>
+          <button class="op" data-vai="q-semcad"><span>Não estamos</span><i>→</i></button>
+          <button class="op" data-vai="q-renda"><span>Não tenho certeza<small>Confira no app Cadastro Único ou no CRAS.</small></span><i>→</i></button>
+        </div>
+      </div>
+
+      <div class="step" id="q-renda" hidden>
+        <p class="passo">Pergunta 3 de 4</p>
+        <h3 class="pergunta">Qual é a renda de cada pessoa da casa?</h3>
+        <p class="ajuda">Some tudo o que entra por mês e divida pelo número de moradores. Meio salário mínimo fica em torno de R$ 810 por pessoa.</p>
+        <div class="opcoes">
+          <button class="op" data-vai="r-tarifa"><span>Até R$ 810 por pessoa<small>Até meio salário mínimo.</small></span><i>→</i></button>
+          <button class="op" data-vai="r-desconto"><span>Entre R$ 810 e R$ 1.621 por pessoa<small>Entre meio e um salário mínimo.</small></span><i>→</i></button>
+          <button class="op" data-vai="q-saude"><span>Mais de R$ 1.621 por pessoa<small>Acima de um salário mínimo.</small></span><i>→</i></button>
+        </div>
+      </div>
+
+      <div class="step" id="q-saude" hidden>
+        <p class="passo">Pergunta 4 de 4</p>
+        <h3 class="pergunta">Alguém na casa depende de aparelho elétrico para tratamento de saúde?</h3>
+        <p class="ajuda">Por exemplo: concentrador de oxigênio, respirador, máquina de diálise, cadeira de rodas motorizada. Nesse caso a renda total da família pode ser de até 3 salários mínimos (cerca de R$ 4.863).</p>
+        <div class="opcoes">
+          <button class="op" data-vai="r-tarifa"><span>Sim, e a renda total da casa é até R$ 4.863</span><i>→</i></button>
+          <button class="op" data-vai="r-nao"><span>Sim, mas a renda total é maior que isso</span><i>→</i></button>
+          <button class="op" data-vai="r-nao"><span>Não</span><i>→</i></button>
+        </div>
+      </div>
+
+      <div class="step" id="q-semcad" hidden>
+        <p class="passo">Pergunta 3 de 4</p>
+        <h3 class="pergunta">Sem o CadÚnico, qual é a renda de cada pessoa da casa?</h3>
+        <p class="ajuda">O desconto do governo só existe para quem está no CadÚnico — mas a inscrição é gratuita e feita no CRAS.</p>
+        <div class="opcoes">
+          <button class="op" data-vai="r-cras"><span>Até R$ 1.621 por pessoa<small>Até um salário mínimo.</small></span><i>→</i></button>
+          <button class="op" data-vai="r-nao"><span>Mais de R$ 1.621 por pessoa</span><i>→</i></button>
+        </div>
+      </div>
+
+      <button class="voltar" id="voltar" hidden>← Voltar</button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RESULTADOS (sempre visíveis, legíveis por crawlers) ================= -->
+<section id="resultados">
+  <div class="wrap">
+    <h2>Os 4 resultados possíveis</h2>
+    <p class="sub">O teste acima leva a um destes quatro cenários. Todos estão descritos aqui embaixo, mesmo sem responder.</p>
+
+    <div class="resultados">
+
+      <article class="res" id="r-tarifa">
+        <span class="selo"><b></b>Tem direito · Tarifa Social</span><span class="seu-resultado">Seu resultado</span>
+        <h3>Tarifa Social: 100% de desconto na tarifa até 80 kWh</h3>
+        <p>Quem recebe BPC, quem está no CadÚnico com renda de até <strong>meio salário mínimo por pessoa</strong>, ou quem está no CadÚnico com renda total de até 3 salários mínimos e tem em casa alguém que depende de aparelho elétrico de saúde <strong>tem direito à Tarifa Social de Energia Elétrica</strong>. Desde a Lei 15.235/2025, o desconto é integral sobre a tarifa de energia nos primeiros 80 kWh do mês. O consumo acima de 80 kWh é cobrado sem desconto, e taxas como iluminação pública e impostos continuam na fatura.</p>
+        <ol>
+          <li>Confira sua conta de luz: se aparecer <strong>“RESIDENCIAL BAIXA RENDA”</strong> na classificação, o desconto já está ativo.</li>
+          <li>Se não aparecer, mantenha o <strong>CadÚnico atualizado</strong> no CRAS, com endereço e renda corretos.</li>
+          <li>A conta precisa estar <strong>no nome de alguém da família</strong> beneficiada.</li>
+          <li>Continua sem o desconto? Ligue para a sua distribuidora com o número do <strong>NIS</strong> em mãos.</li>
+        </ol>
+      </article>
+
+      <article class="res" id="r-desconto">
+        <span class="selo"><b></b>Tem direito · Desconto Social</span><span class="seu-resultado">Seu resultado</span>
+        <h3>Desconto Social: tarifa reduzida até 120 kWh</h3>
+        <p>Famílias inscritas no CadÚnico com renda por pessoa <strong>entre meio e um salário mínimo</strong> têm direito ao Desconto Social, benefício criado pela Lei 15.235/2025 e válido desde <strong>1º de janeiro de 2026</strong>. Ele garante tarifa reduzida no consumo de até 120 kWh por mês, com isenção da cota da CDE. O que passar de 120 kWh vem sem redução.</p>
+        <ol>
+          <li>Mantenha o <strong>CadÚnico atualizado</strong> no CRAS.</li>
+          <li>Garanta que a conta de luz esteja <strong>no nome de alguém do cadastro</strong>.</li>
+          <li>Confira a fatura todo mês para ver se o desconto entrou.</li>
+        </ol>
+      </article>
+
+      <article class="res neutro" id="r-cras">
+        <span class="selo"><b></b>Ainda não — mas dá para conseguir</span><span class="seu-resultado">Seu resultado</span>
+        <h3>Falta o CadÚnico: você pode ter direito</h3>
+        <p>Sua renda cabe nas regras, só falta o cadastro. <strong>Procure o CRAS da sua cidade e faça o CadÚnico — é gratuito.</strong> Leve documento com foto, CPF, comprovante de endereço e uma conta de luz. Depois de cadastrado e com os dados atualizados, o desconto costuma entrar sozinho na fatura, sem precisar pedir na distribuidora.</p>
+
+        <div class="igreen">
+          <h4>Mas não se preocupe!</h4>
+          <p>Enquanto o cadastro não sai, você ainda consegue desconto de energia com a <strong>iGreen</strong>. Clique no link abaixo e se cadastre de graça.</p>
+          <a class="cta cta-1" href="https://green.igreenenergy.com.br/autoconexao/?id=151034&amp;desc=8" target="_blank" rel="noopener">Quero meu desconto de energia — cadastro grátis</a>
+          <a class="cta cta-2" href="https://api.whatsapp.com/send/?phone=5519971639226&amp;text=Ol%C3%A1+eu+ainda+n%C3%A3o+tenho+direito+ao+desconto+social+mas+quero+a+conta+de+energia+mais+barata+mesmo+assim%21" target="_blank" rel="noopener">Se desejar saber mais, chame no WhatsApp</a>
+        </div>
+      </article>
+
+      <article class="res neutro" id="r-nao">
+        <span class="selo"><b></b>Sem direito ao desconto do governo</span><span class="seu-resultado">Seu resultado</span>
+        <h3>Você não se encaixa nas regras da Tarifa Social</h3>
+        <p>Pelos critérios atuais, sua família não se enquadra na Tarifa Social nem no Desconto Social. Se a renda mudar, vale refazer o teste — o benefício acompanha a situação declarada no CadÚnico.</p>
+
+        <div class="igreen">
+          <h4>Mas não se preocupe!</h4>
+          <p>Você ainda consegue desconto de energia com a <strong>iGreen</strong>. É energia limpa por assinatura: <strong>sem obra, sem instalação e sem custo para se cadastrar</strong> — você continua recebendo a mesma energia, pagando menos. Clique no link abaixo e se cadastre de graça.</p>
+          <a class="cta cta-1" href="https://green.igreenenergy.com.br/autoconexao/?id=151034&amp;desc=8" target="_blank" rel="noopener">Quero meu desconto de energia — cadastro grátis</a>
+          <a class="cta cta-2" href="https://api.whatsapp.com/send/?phone=5519971639226&amp;text=Ol%C3%A1+eu+ainda+n%C3%A3o+tenho+direito+ao+desconto+social+mas+quero+a+conta+de+energia+mais+barata+mesmo+assim%21" target="_blank" rel="noopener">Se desejar saber mais, chame no WhatsApp</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= FLUXOGRAMA ================= -->
+<section id="fluxograma">
+  <div class="wrap">
+    <h2>O fluxograma completo</h2>
+    <p class="sub">O mesmo caminho do teste, num olhar só.</p>
+    <div class="fluxo">
+      <svg viewBox="0 0 640 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Fluxograma da Tarifa Social: quem recebe BPC tem Tarifa Social. Quem está no CadÚnico com renda por pessoa de até meio salário mínimo tem Tarifa Social. Entre meio e um salário mínimo, Desconto Social. Renda maior, mas até 3 salários mínimos no total e com uso de aparelho elétrico de saúde, Tarifa Social. Fora disso, sem direito, mas com opção de desconto pela iGreen.">
+        <style>
+          .b{fill:#fff;stroke:#04291B;stroke-width:1.5}
+          .t{font:400 11.5px 'Public Sans',sans-serif;fill:#04291B}
+          .l{font:400 10px 'IBM Plex Mono',monospace;fill:#5E6F65}
+          .ln{stroke:#9DB3A5;stroke-width:1.4;fill:none}
+        </style>
+        <rect x="200" y="10" width="240" height="42" rx="21" fill="#04291B"/>
+        <text x="320" y="36" text-anchor="middle" font-family="Archivo,sans-serif" font-weight="700" font-size="13" fill="#C6F24E">SUA CONTA DE LUZ</text>
+        <path class="ln" d="M320 52 V 78"/>
+
+        <rect class="b" x="150" y="78" width="340" height="46" rx="8"/>
+        <text class="t" x="320" y="99" text-anchor="middle">Alguém da casa recebe BPC / LOAS?</text>
+        <text class="l" x="320" y="115" text-anchor="middle">idoso 65+ ou pessoa com deficiência</text>
+        <path class="ln" d="M490 101 H 596 V 320 H 130 V 340"/>
+        <text class="l" x="530" y="94">SIM</text>
+        <path class="ln" d="M320 124 V 150"/>
+        <text class="l" x="330" y="142">NÃO</text>
+
+        <rect class="b" x="150" y="150" width="340" height="46" rx="8"/>
+        <text class="t" x="320" y="171" text-anchor="middle">Sua família está no CadÚnico?</text>
+        <text class="l" x="320" y="187" text-anchor="middle">cadastro gratuito, feito no CRAS</text>
+        <path class="ln" d="M320 196 V 222"/>
+        <text class="l" x="330" y="214">SIM</text>
+        <path class="ln" d="M150 173 H 70 V 470"/>
+        <text class="l" x="90" y="166">NÃO</text>
+
+        <rect class="b" x="150" y="222" width="340" height="60" rx="8"/>
+        <text class="t" x="320" y="245" text-anchor="middle">Qual a renda por pessoa da casa?</text>
+        <text class="l" x="320" y="262" text-anchor="middle">renda total ÷ número de moradores</text>
+        <text class="l" x="320" y="276" text-anchor="middle">½ salário mínimo ≈ R$ 810</text>
+
+        <path class="ln" d="M180 282 V 308 H 130 V 340"/>
+        <text class="l" x="140" y="302">até ½ SM</text>
+        <path class="ln" d="M320 282 V 340"/>
+        <text class="l" x="326" y="302">½ a 1 SM</text>
+        <path class="ln" d="M460 282 V 308 H 520 V 340"/>
+        <text class="l" x="470" y="302">+ de 1 SM</text>
+
+        <rect x="20" y="340" width="220" height="54" rx="10" fill="#E6F2E9" stroke="#0B8A4B" stroke-width="1.5"/>
+        <text x="130" y="362" text-anchor="middle" font-family="Archivo,sans-serif" font-weight="700" font-size="12" fill="#046B39">TARIFA SOCIAL</text>
+        <text class="l" x="130" y="380" text-anchor="middle" fill="#046B39">100% até 80 kWh</text>
+
+        <rect x="255" y="340" width="150" height="54" rx="10" fill="#C6F24E" stroke="#0B8A4B" stroke-width="1.5"/>
+        <text x="330" y="362" text-anchor="middle" font-family="Archivo,sans-serif" font-weight="700" font-size="12" fill="#04291B">DESCONTO SOCIAL</text>
+        <text class="l" x="330" y="380" text-anchor="middle" fill="#04291B">tarifa menor até 120 kWh</text>
+
+        <rect class="b" x="420" y="340" width="200" height="76" rx="8"/>
+        <text class="t" x="520" y="362" text-anchor="middle">Alguém usa aparelho</text>
+        <text class="t" x="520" y="377" text-anchor="middle">elétrico de saúde?</text>
+        <text class="l" x="520" y="396" text-anchor="middle">e renda total até 3 SM</text>
+        <path class="ln" d="M620 378 H 632 V 300 H 130 V 340"/>
+        <text class="l" x="592" y="334">SIM ↰</text>
+        <path class="ln" d="M520 416 V 470"/>
+        <text class="l" x="528" y="446">NÃO</text>
+
+        <rect x="70" y="470" width="500" height="72" rx="10" fill="#04291B"/>
+        <text x="320" y="496" text-anchor="middle" font-family="Archivo,sans-serif" font-weight="700" font-size="12.5" fill="#C6F24E">SEM DIREITO AO DESCONTO DO GOVERNO</text>
+        <text class="l" x="320" y="515" text-anchor="middle" fill="#C4DBCE">Mas ainda dá para pagar menos na energia:</text>
+        <text class="l" x="320" y="531" text-anchor="middle" fill="#C4DBCE">desconto com a iGreen, sem obra e sem custo de adesão.</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COMPARATIVO ================= -->
+<section id="comparacao">
+  <div class="wrap">
+    <h2>Tarifa Social x Desconto Social: qual é a diferença?</h2>
+    <p class="sub">São dois benefícios diferentes, criados pela mesma lei (o programa “Luz do Povo”).</p>
+    <table class="tab">
+      <thead>
+        <tr><th>Benefício</th><th>Quem tem direito</th><th>Desconto</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Tarifa Social</td>
+          <td>CadÚnico com renda até ½ salário mínimo por pessoa; quem recebe BPC; ou CadÚnico com renda total até 3 salários mínimos e uso contínuo de aparelho elétrico de saúde</td>
+          <td class="mono">100% da tarifa<br>até 80 kWh/mês</td>
+        </tr>
+        <tr>
+          <td>Desconto Social</td>
+          <td>CadÚnico com renda por pessoa entre ½ e 1 salário mínimo</td>
+          <td class="mono">tarifa reduzida<br>até 120 kWh/mês</td>
+        </tr>
+        <tr>
+          <td>Nenhum dos dois</td>
+          <td>Quem está fora dos critérios acima</td>
+          <td class="mono">energia por assinatura<br>(iGreen)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section id="perguntas-frequentes">
+  <div class="wrap">
+    <h2>Perguntas frequentes sobre o desconto na conta de luz</h2>
+    <p class="sub">As dúvidas que mais aparecem no CRAS e nas distribuidoras.</p>
+
+    <details open>
+      <summary>Preciso pedir o desconto na distribuidora de energia?</summary>
+      <p>Normalmente não. Com o CadÚnico atualizado e a conta de luz no nome de alguém da família beneficiada, o desconto entra automaticamente na fatura, porque o Ministério do Desenvolvimento Social cruza os dados com as distribuidoras. Se mesmo assim o desconto não aparecer, aí sim procure a distribuidora com o número do NIS.</p>
+    </details>
+    <details>
+      <summary>Como sei se já estou recebendo a Tarifa Social?</summary>
+      <p>Olhe o campo de classificação da sua conta de luz. Se estiver escrito “RESIDENCIAL BAIXA RENDA”, o benefício já está ativo.</p>
+    </details>
+    <details>
+      <summary>Quem recebe Bolsa Família tem Tarifa Social automaticamente?</summary>
+      <p>Não automaticamente. O Bolsa Família não é o critério. O que dá direito é estar inscrito no CadÚnico com renda por pessoa de até meio salário mínimo — o que vale para a maioria de quem recebe Bolsa Família, mas não para todos.</p>
+    </details>
+    <details>
+      <summary>A Tarifa Social zera a conta de luz?</summary>
+      <p>Não zera a conta inteira. Ela zera a tarifa de energia nos primeiros 80 kWh do mês. Continuam sendo cobrados a Contribuição para Iluminação Pública (CIP), definida pelo município, os impostos como o ICMS e outros encargos.</p>
+    </details>
+    <details>
+      <summary>Posso ter o desconto em mais de um imóvel?</summary>
+      <p>Não. Cada família tem direito ao benefício em uma única unidade consumidora, a da moradia. Se mudar de endereço, avise o CRAS e a distribuidora para transferir o benefício.</p>
+    </details>
+    <details>
+      <summary>Moro de aluguel. Tenho direito?</summary>
+      <p>Sim, desde que a conta de luz esteja no nome de quem recebe o benefício. Se o imóvel for cedido, o titular da conta precisa fazer parte do CadÚnico da família elegível.</p>
+    </details>
+    <details>
+      <summary>Posso perder o benefício?</summary>
+      <p>Pode. Se o CadÚnico ficar desatualizado ou se a família deixar de atender aos critérios, o desconto é suspenso e depois cancelado. Atualize o cadastro pelo menos a cada dois anos, ou sempre que mudar renda, endereço ou composição da família.</p>
+    </details>
+    <details>
+      <summary>Não tenho direito ao desconto do governo. Existe outra forma de pagar menos?</summary>
+      <p>Sim. Você pode aderir à energia por assinatura, um modelo em que uma usina de energia limpa injeta créditos na rede e você recebe um desconto na conta, sem obra, sem instalação de placas e sem custo de adesão. É o caso da iGreen — o cadastro é gratuito e feito pelo link nesta página.</p>
+    </details>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><strong style="color:#fff">Site informativo e independente.</strong> Não somos órgão público, não somos distribuidora de energia e não cobramos nada para consultar o benefício.</p>
+    <p>Fontes oficiais: <a href="https://www.gov.br/aneel" target="_blank" rel="noopener">ANEEL</a>, <a href="https://www.gov.br/mds" target="_blank" rel="noopener">Ministério do Desenvolvimento e Assistência Social</a> e o CRAS da sua cidade. Valores em reais são referências de 2026 e mudam quando o salário mínimo é reajustado.</p>
+    <p>Publicado por Caue Dutra · Atualizado em 13 de julho de 2026 · <a href="https://github.com/dutracaue" target="_blank" rel="noopener">github.com/dutracaue</a></p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var steps = document.querySelectorAll('.step');
+  var results = document.querySelectorAll('.res');
+  var bar = document.getElementById('progresso');
+  var back = document.getElementById('voltar');
+  var hist = [];
+  var progresso = {'q-bpc':25,'q-cad':50,'q-renda':75,'q-semcad':75,'q-saude':100};
+
+  function show(id){
+    steps.forEach(function(s){ s.hidden = (s.id !== id); });
+    bar.style.width = (progresso[id]||25) + '%';
+    back.hidden = hist.length === 0;
+  }
+  function result(id){
+    results.forEach(function(r){
+      r.dataset.ativo = (r.id === id) ? '1' : '0';
+      r.dataset.apagado = (r.id === id) ? '0' : '1';
+    });
+    document.getElementById(id).scrollIntoView({block:'start'});
+  }
+  document.querySelectorAll('.op').forEach(function(b){
+    b.addEventListener('click', function(){
+      var vai = b.dataset.vai;
+      var atual = b.closest('.step').id;
+      hist.push(atual);
+      if (vai.indexOf('r-') === 0) { result(vai); back.hidden = false; }
+      else { show(vai); }
+    });
+  });
+  back.addEventListener('click', function(){
+    var a = hist.pop();
+    if (a) { results.forEach(function(r){ r.dataset.ativo='0'; r.dataset.apagado='0'; }); show(a); }
+  });
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://dutracaue.github.io/tarifa-social/#org",
+      "name": "Desconto na Conta de Luz",
+      "url": "https://dutracaue.github.io/tarifa-social/",
+      "description": "Guia independente sobre a Tarifa Social de Energia Elétrica e o Desconto Social no Brasil."
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dutracaue.github.io/tarifa-social/#site",
+      "url": "https://dutracaue.github.io/tarifa-social/",
+      "name": "Desconto na Conta de Luz",
+      "inLanguage": "pt-BR",
+      "publisher": { "@id": "https://dutracaue.github.io/tarifa-social/#org" }
+    },
+    {
+      "@type": "Article",
+      "@id": "https://dutracaue.github.io/tarifa-social/#artigo",
+      "isPartOf": { "@id": "https://dutracaue.github.io/tarifa-social/#site" },
+      "headline": "Tarifa Social de Energia 2026: veja se você tem direito ao desconto na conta de luz",
+      "description": "Quem tem direito à Tarifa Social (100% de desconto até 80 kWh) e ao Desconto Social (tarifa reduzida até 120 kWh) em 2026, como ativar o benefício e o que fazer se não tiver direito.",
+      "inLanguage": "pt-BR",
+      "datePublished": "2026-07-13",
+      "dateModified": "2026-07-13",
+      "author": {
+        "@type": "Person",
+        "name": "Caue Dutra",
+        "url": "https://github.com/dutracaue"
+      },
+      "publisher": { "@id": "https://dutracaue.github.io/tarifa-social/#org" },
+      "about": [
+        { "@type": "Thing", "name": "Tarifa Social de Energia Elétrica" },
+        { "@type": "Thing", "name": "Desconto Social de Energia Elétrica" },
+        { "@type": "Thing", "name": "CadÚnico" }
+      ],
+      "mainEntityOfPage": "https://dutracaue.github.io/tarifa-social/"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://dutracaue.github.io/tarifa-social/" },
+        { "@type": "ListItem", "position": 2, "name": "Tarifa Social de Energia 2026" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://dutracaue.github.io/tarifa-social/#faq",
+      "inLanguage": "pt-BR",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Quem tem direito à Tarifa Social de Energia Elétrica em 2026?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Têm direito: famílias inscritas no CadÚnico com renda por pessoa de até meio salário mínimo; pessoas que recebem o BPC/LOAS; e famílias no CadÚnico com renda total de até 3 salários mínimos que tenham alguém dependente de aparelho elétrico para tratamento de saúde. O desconto é de 100% da tarifa de energia no consumo de até 80 kWh por mês." }
+        },
+        {
+          "@type": "Question",
+          "name": "O que é o Desconto Social de energia elétrica?",
+          "acceptedAnswer": { "@type": "Answer", "text": "É um benefício criado pela Lei 15.235/2025, válido desde 1º de janeiro de 2026, para famílias inscritas no CadÚnico com renda por pessoa entre meio e um salário mínimo. Garante tarifa reduzida no consumo de até 120 kWh por mês, com isenção da cota da CDE. O consumo acima de 120 kWh não tem redução." }
+        },
+        {
+          "@type": "Question",
+          "name": "Preciso pedir o desconto na distribuidora de energia?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Normalmente não. Com o CadÚnico atualizado e a conta de luz no nome de alguém da família beneficiada, o desconto entra automaticamente na fatura. Se não aparecer, procure a distribuidora com o número do NIS." }
+        },
+        {
+          "@type": "Question",
+          "name": "Como sei se já estou recebendo a Tarifa Social?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Olhe o campo de classificação da conta de luz. Se estiver escrito RESIDENCIAL BAIXA RENDA, o benefício já está ativo." }
+        },
+        {
+          "@type": "Question",
+          "name": "Quem recebe Bolsa Família tem Tarifa Social automaticamente?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Não automaticamente. O critério não é o Bolsa Família, e sim estar inscrito no CadÚnico com renda por pessoa de até meio salário mínimo." }
+        },
+        {
+          "@type": "Question",
+          "name": "A Tarifa Social zera a conta de luz?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Não zera a conta inteira. Zera a tarifa de energia nos primeiros 80 kWh do mês. Continuam sendo cobrados a Contribuição para Iluminação Pública (CIP), o ICMS e outros encargos." }
+        },
+        {
+          "@type": "Question",
+          "name": "Posso ter o desconto em mais de um imóvel?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Não. Cada família tem direito ao benefício em uma única unidade consumidora, a da moradia." }
+        },
+        {
+          "@type": "Question",
+          "name": "Não tenho direito ao desconto do governo. Existe outra forma de pagar menos na energia?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Sim. É possível aderir à energia por assinatura, em que uma usina de energia limpa injeta créditos na rede e o consumidor recebe desconto na conta, sem obra, sem instalação de placas e sem custo de adesão." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+</body>
+</html>
